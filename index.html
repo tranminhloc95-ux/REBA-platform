@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REBA™ – Smart Trading Rebate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1e293b, #020617 60%);
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      padding: 28px 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(2,6,23,0.6);
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+      z-index: 10;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    .logo span { color: #38bdf8; }
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #cbd5f5;
+      font-size: 14px;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    .hero {
+      padding: 120px 64px 100px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero small {
+      color: #38bdf8;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-size: 54px;
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+    .hero p {
+      max-width: 520px;
+      color: #94a3b8;
+      font-size: 16px;
+    }
+    .hero-actions {
+      margin-top: 36px;
+      display: flex;
+      gap: 16px;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(148,163,184,0.3);
+      padding: 14px 30px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #e5e7eb;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 64px;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      color: #94a3b8;
+      max-width: 600px;
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(30,41,59,0.6), rgba(2,6,23,0.9));
+      border: 1px solid rgba(148,163,184,0.15);
+      border-radius: 20px;
+      padding: 28px;
+      transition: transform .3s ease, border .3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border: 1px solid rgba(56,189,248,0.5);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .card p {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .numbers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 40px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .numbers h4 {
+      font-size: 36px;
+      margin: 0;
+      color: #38bdf8;
+    }
+    .numbers span {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.15);
+      padding: 40px 64px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">REBA<span>.</span></div>
+  <nav>
+    <a href="#">Platform</a>
+    <a href="#">Brokers</a>
+    <a href="#">How it works</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <small>SMART TRADING REBATE</small>
+  <h1>Trade như cũ.<br>Phí được trả lại.</h1>
+  <p>
+    REBA là nền tảng hoàn phí giao dịch dành cho trader nghiêm túc. 
+    Không phô trương. Không chiêu trò. Chỉ là hệ thống hoạt động bền bỉ phía sau lợi nhuận.
+  </p>
+  <div class="hero-actions">
+    <a href="#" class="btn-primary">Get Started</a>
+    <a href="#" class="btn-secondary">View Brokers</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Supported Brokers</h2>
+  <p class="section-desc">Chúng tôi chỉ chọn những nền tảng có thanh khoản, dữ liệu rõ ràng và cơ chế rebate minh bạch.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Deriv</h3>
+      <p>Rebate theo mỗi giao dịch. Phù hợp binary & synthetic indices.</p>
+    </div>
+    <div class="card">
+      <h3>IQ Option</h3>
+      <p>Hoàn phí dựa trên volume. Số liệu cập nhật định kỳ.</p>
+    </div>
+    <div class="card">
+      <h3>Exness</h3>
+      <p>Rebate spread & commission cho forex trader.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">Why REBA</h2>
+  <div class="numbers">
+    <div>
+      <h4>99.9%</h4>
+      <span>Rebate accuracy</span>
+    </div>
+    <div>
+      <h4>24/7</h4>
+      <span>Tracking system</span>
+    </div>
+    <div>
+      <h4>0</h4>
+      <span>Hidden conditions</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 REBA™</div>
+  <div>Built for traders who think long-term</div>
+</footer>
+
+</body>
+</html>
